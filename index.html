@@ -2851,6 +2851,7 @@ if (reversed == null) { reversed = false; }
 			foundry_up_btn.clickable = true;
 		}
 		function downscaleBG() {
+			root.top_ui.gotoAndPlay(1)
 			createjs.Tween.get(main.center)
 				.to({
 					x: 0,
@@ -2862,7 +2863,6 @@ if (reversed == null) { reversed = false; }
 		}
 		function showButton() {
 			root.cta.visible = true
-			root.top_ui.gotoAndPlay(1)
 			ui.gotoAndPlay(100)
 		}
 		var ctaclickcount = 0
